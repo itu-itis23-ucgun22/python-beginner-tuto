@@ -8,4 +8,9 @@ print(censav.get("height",174))
 print(censav.popitem())
 print(list(censav.keys()))
 print(len(censav))
+
+
+del censav['age']
+censav["hobbie"]="reading book"
+
 print(censav)
