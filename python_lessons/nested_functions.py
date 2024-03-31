@@ -7,12 +7,15 @@ def talk(phrase):
 
 talk("I will date")
 
-def count():
+#closure
+def counter():
     count = 0
     def increment():
-        nonlocal count 
-        count +=1
-        print(count)
-    increment()
-
-count()
+        nonlocal count
+        count += 1
+        return count
+    return increment
+a = counter()
+print(a())
+print(a())
+print(a())
