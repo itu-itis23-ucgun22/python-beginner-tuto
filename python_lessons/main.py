@@ -27,6 +27,6 @@ def check_win(player,computer):
     else: 
       return "you win"
 
-#choices = get_choices()
-#result = check_win(choices["player"],choices["computer"])
-#print(result)
+choices = get_choices()
+result = check_win(choices["player"],choices["computer"])
+print(result)
