@@ -15,4 +15,5 @@ dogs[2:2] = ["kılıbık","korkak"]
 dogs.remove(1)
 dogs.sort(key = str.lower) # sorted(dogs,key = str.lower)
 
+
 print(dogs)
