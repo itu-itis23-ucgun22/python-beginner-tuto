@@ -7,5 +7,5 @@ def get_choices():
   choices = {"player" : player_choice, "computer":com_choice}
   return choices
 
-choices = get_choices()
-print(choices)
+def check_win(player,computer):
+  return [player,computer]
