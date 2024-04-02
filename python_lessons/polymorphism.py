@@ -4,7 +4,7 @@ class Dog():
 
 class Cat():
     def eat(self):
-        print("cat eating")
+        print("cat eating.")
 
 
 animal1 = Dog()
