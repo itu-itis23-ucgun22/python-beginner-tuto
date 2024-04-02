@@ -1,6 +1,6 @@
 class Animal:
     def walk(self):
-        print("walking")
+        print("walking...")
 
 class Dog(Animal):
     def __init__(self,name,age):
