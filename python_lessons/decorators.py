@@ -4,7 +4,7 @@ def logtime(func):
     def wrapper():
         print("say")
         val = func()
-        print("friends")
+        print("friends.")
       
         return val
     return wrapper
