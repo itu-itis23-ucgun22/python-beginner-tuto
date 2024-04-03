@@ -38,7 +38,7 @@ class Deck:
         card_dealt = []
         for x in range(number):
             if len(self.cards) > 0:
-                card = self.cards.pop(0)  # Fixed: pop() method with index
+                card = self.cards.pop(0)  
                 card_dealt.append(card)
         return card_dealt
 
@@ -101,8 +101,8 @@ class Game:
                 player_hand.add_card(deck.deal(1))
                 dealer_hand.add_card(deck.deal(1))
 
-            player_hand.calculate_values()  # Calculate player hand value
-            dealer_hand.calculate_values()  # Calculate dealer hand value
+            player_hand.calculate_values()  
+            dealer_hand.calculate_values()  
             
             print()
             print("*" * 30)
@@ -122,7 +122,7 @@ class Game:
                     choice = input("Please choose 'hit' or 'stand': ").lower()
                 if choice in ['h', 'hit']:
                     player_hand.add_card(deck.deal(1))
-                    player_hand.calculate_values()  # Calculate player hand value after adding a card
+                    player_hand.calculate_values()  
                     player_hand.display()
             if self.check_win(player_hand, dealer_hand):
                 continue
@@ -131,7 +131,7 @@ class Game:
 
             while dealer_hand_value < 17:
                 dealer_hand.add_card(deck.deal(1))
-                dealer_hand.calculate_values()  # Calculate dealer hand value after adding a card
+                dealer_hand.calculate_values()  
                 dealer_hand_value = dealer_hand.get_value()
 
             dealer_hand.display(show_all_dealer_cards=True)
